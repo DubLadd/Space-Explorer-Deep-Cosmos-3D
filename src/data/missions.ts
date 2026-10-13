@@ -1,0 +1,216 @@
+import { Mission } from '../types/cosmos';
+
+export const MISSIONS: Mission[] = [
+  {
+    id: 'grand-solar-tour',
+    title: 'Grand Tour of the Solar System',
+    tagline: 'From the blazing corona of the Sun to the nitrogen glaciers of Pluto',
+    difficulty: 'Beginner',
+    steps: [
+      {
+        title: 'Step 1: The Yellow Heart',
+        bodyId: 'sun',
+        mode: 'solar',
+        cameraDistance: 6.5,
+        briefing: 'We begin at Sol, our G-type yellow dwarf star. Over 4 million tons of matter are converted into radiant energy every second in its thermonuclear core.',
+        telemetry: [
+          { label: 'Surface Temp', value: '5,778 K' },
+          { label: 'Core Temp', value: '15.7M K' },
+          { label: 'Mass Fraction', value: '99.86% of Solar System' },
+        ],
+      },
+      {
+        title: 'Step 2: Iron Outpost',
+        bodyId: 'mercury',
+        mode: 'solar',
+        cameraDistance: 3.5,
+        briefing: 'Mercury orbits in a tight 88-day loop with an iron core spanning 85% of its radius. Here, daytime heat melts lead while night plunges into liquid nitrogen chill.',
+        telemetry: [
+          { label: 'Distance to Sun', value: '0.387 AU' },
+          { label: 'Resonance', value: '3:2 Spin-Orbit' },
+          { label: 'Temp Delta', value: '600 K swing' },
+        ],
+      },
+      {
+        title: 'Step 3: The Blue Marble & Moon',
+        bodyId: 'earth',
+        mode: 'solar',
+        cameraDistance: 4.2,
+        briefing: 'Earth is sheltered by an active geodynamo magnetosphere and stabilized by its large satellite, Luna. 71% of its surface is covered by liquid water.',
+        telemetry: [
+          { label: 'Surface Pressure', value: '1.00 atm' },
+          { label: 'Orbital Velocity', value: '29.78 km/s' },
+          { label: 'Equilibrium Temp', value: '288 K (15°C)' },
+        ],
+      },
+      {
+        title: 'Step 4: King of Storms',
+        bodyId: 'jupiter',
+        mode: 'solar',
+        cameraDistance: 7.5,
+        briefing: 'Jupiter contains more mass than all other planets combined. Beneath its banded ammonium hydrosulfide clouds, hydrogen is compressed into liquid metallic state.',
+        telemetry: [
+          { label: 'Rotation Period', value: '9.93 Hours' },
+          { label: 'Magnetic Moment', value: '20,000x Earth' },
+          { label: 'Red Spot Age', value: '> 350 Years' },
+        ],
+      },
+      {
+        title: 'Step 5: The Ringed Wonder',
+        bodyId: 'saturn',
+        mode: 'solar',
+        cameraDistance: 6.8,
+        briefing: 'Saturn’s iconic rings are composed of 99% pure water ice particles spanning 282,000 km across, yet less than 30 meters thick on average.',
+        telemetry: [
+          { label: 'Bulk Density', value: '0.687 g/cm³ (Floats)' },
+          { label: 'Ring Thickness', value: '10 - 30 m' },
+          { label: 'Known Moons', value: '146' },
+        ],
+      },
+      {
+        title: 'Step 6: Kuiper Belt Sentinel',
+        bodyId: 'pluto',
+        mode: 'solar',
+        cameraDistance: 3.2,
+        briefing: 'Pluto welcomes us to deep space with Sputnik Planitia, a heart-shaped nitrogen ice glacier kept geologically alive by convective overturn.',
+        telemetry: [
+          { label: 'Orbital Period', value: '248 Years' },
+          { label: 'Surface Temp', value: '44 K (-229°C)' },
+          { label: 'Barycenter', value: 'Ex-Pluto (with Charon)' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'trappist-habitable',
+    title: 'TRAPPIST-1: Alien Oceans Search',
+    tagline: 'Investigating seven Earth-sized worlds orbiting an ultra-cool red dwarf star',
+    difficulty: 'Scientific',
+    steps: [
+      {
+        title: 'Step 1: The Crimson Host',
+        bodyId: 'trappist-1',
+        mode: 'exoplanet',
+        cameraDistance: 4.8,
+        briefing: 'TRAPPIST-1 is an ultra-cool M-dwarf star just 39.5 light-years away. It is barely larger than Jupiter, yet will burn fuel steadily for over 12 trillion years.',
+        telemetry: [
+          { label: 'Spectral Class', value: 'M8V Ultra-Cool' },
+          { label: 'Radius', value: '0.12 Solar Radii' },
+          { label: 'Luminosity', value: '0.05% of Sun' },
+        ],
+      },
+      {
+        title: 'Step 2: Scorched Basalt (1b)',
+        bodyId: 'trappist-1b',
+        mode: 'exoplanet',
+        cameraDistance: 3.2,
+        briefing: 'TRAPPIST-1b completes an orbit in just 36 hours. JWST infrared spectroscopy detected bare rocky basalt with no thick atmosphere, stripped by youthful stellar flares.',
+        telemetry: [
+          { label: 'Orbital Period', value: '1.51 Earth Days' },
+          { label: 'Dayside Temp', value: '503 K' },
+          { label: 'Atmosphere Status', value: 'Stripped Basalt' },
+        ],
+      },
+      {
+        title: 'Step 3: Habitable Prime (1e)',
+        bodyId: 'trappist-1e',
+        mode: 'exoplanet',
+        cameraDistance: 3.4,
+        briefing: 'TRAPPIST-1e sits squarely in the middle of the circumstellar habitable zone. With 69% of Earth’s mass and 93% of our surface gravity, liquid water can pool on its surface.',
+        telemetry: [
+          { label: 'Stellar Flux', value: '0.66 of Earth' },
+          { label: 'Surface Gravity', value: '0.93 G' },
+          { label: 'Core Density', value: 'High Iron Fraction' },
+        ],
+      },
+      {
+        title: 'Step 4: The Deep Ocean World (1f)',
+        bodyId: 'trappist-1f',
+        mode: 'exoplanet',
+        cameraDistance: 3.5,
+        briefing: 'Density models indicate TRAPPIST-1f may be up to 20% water by mass—a super-ocean world whose seas plunge hundreds of kilometers down to high-pressure Ice VII mantles.',
+        telemetry: [
+          { label: 'Water Fraction', value: '~20% by mass' },
+          { label: 'Orbital Period', value: '9.21 Earth Days' },
+          { label: 'Equilibrium Temp', value: '219 K' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'black-hole-event-horizon',
+    title: 'Voyage to the Event Horizon',
+    tagline: 'Approaching the Schwarzschild radius and experiencing gravitational time dilation',
+    difficulty: 'Advanced Pilot',
+    steps: [
+      {
+        title: 'Step 1: Outer Accretion Disc',
+        bodyId: 'black-hole-gargantua',
+        mode: 'blackhole',
+        cameraDistance: 12.0,
+        briefing: 'Entering the outer accretion disk. Plasma spiraling inward at Keplerian velocities heats up to tens of millions of degrees, radiating intense X-ray photons.',
+        telemetry: [
+          { label: 'Orbital Speed', value: '0.15 c' },
+          { label: 'Gas Temp', value: '2.4M Kelvin' },
+          { label: 'Frame Dragging', value: 'Active (Kerr Metric)' },
+        ],
+      },
+      {
+        title: 'Step 2: The Photon Sphere & Lensing',
+        bodyId: 'black-hole-gargantua',
+        mode: 'blackhole',
+        cameraDistance: 6.0,
+        briefing: 'At 1.5 times the Schwarzschild radius, gravity is so strong that photons orbit in unstable circular paths. Background starfield light wraps into complete Einstein rings.',
+        telemetry: [
+          { label: 'Photon Orbit', value: 'r = 3GM/c²' },
+          { label: 'Lensing Angle', value: 'Infinite Curvature' },
+          { label: 'Time Dilation', value: 'dt = dt₀ / √(1 - rs/r)' },
+        ],
+      },
+      {
+        title: 'Step 3: Point of No Return',
+        bodyId: 'black-hole-gargantua',
+        mode: 'blackhole',
+        cameraDistance: 3.8,
+        briefing: 'Approaching the event horizon. From your perspective, time flows normally; to an outside observer at infinity, your ship appears frozen on the event horizon forever.',
+        telemetry: [
+          { label: 'Escape Velocity', value: '>= c (Speed of Light)' },
+          { label: 'Tidal Gradient', value: 'Extreme Spaghettification' },
+          { label: 'Redshift Factor', value: 'z → ∞' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'supernova-cataclysm',
+    title: 'Supernova Collapse & Relativistic Shockwave',
+    tagline: 'Observe the iron-core collapse of a massive star and the birth of a neutron remnant',
+    difficulty: 'Scientific',
+    steps: [
+      {
+        title: 'Step 1: Iron Core Fusion Cessation',
+        bodyId: 'sun',
+        mode: 'supernova',
+        cameraDistance: 10.0,
+        briefing: 'When silicon fuses into iron in a supergiant star’s core, nuclear fusion ceases to yield energy. Electron degeneracy pressure fails, initiating catastrophic collapse in 0.2 seconds.',
+        telemetry: [
+          { label: 'Core Density', value: '> 10¹⁴ g/cm³' },
+          { label: 'Collapse Duration', value: '~200 Milliseconds' },
+          { label: 'Neutrino Flux', value: '10⁴⁶ Joules' },
+        ],
+      },
+      {
+        title: 'Step 2: Expanding Ionized Gas Shell',
+        bodyId: 'sun',
+        mode: 'supernova',
+        cameraDistance: 7.0,
+        briefing: 'The core rebound shockwave tears outward at 10% the speed of light, ejecting solar masses of gold, platinum, and heavy elements out into interstellar space.',
+        telemetry: [
+          { label: 'Blast Velocity', value: '30,000 km/s (0.1 c)' },
+          { label: 'Luminosity Peak', value: '10 Billion Suns' },
+          { label: 'Remnant', value: 'Magnetar / Pulsar Core' },
+        ],
+      },
+    ],
+  },
+];

@@ -1,0 +1,6 @@
+{
+  "name": "Space Explorer: Deep Cosmos 3D",
+  "description": "High-fidelity 3D WebGL cosmic observatory and interactive spacecraft flight simulator with multi-star exoplanetary systems, gravitational lensing black holes, pulsars, supernovas, and guided missions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
